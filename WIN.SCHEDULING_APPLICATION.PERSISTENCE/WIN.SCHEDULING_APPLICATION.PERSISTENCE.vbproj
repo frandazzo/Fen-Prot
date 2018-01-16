@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{226D1D58-A453-48DE-889F-12E4441ADA5C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>WIN.SCHEDULING_APPLICATION.PERSISTENCE</RootNamespace>
+    <AssemblyName>WIN.SCHEDULING_APPLICATION.PERSISTENCE</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/WIN.SCHEDULING_APPLICATION.PERSISTENCE/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>WIN.SCHEDULING_APPLICATION.PERSISTENCE.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>WIN.SCHEDULING_APPLICATION.PERSISTENCE.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.2.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\CoreDll\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WIN.TECHNICAL.DEPLOYMENT, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.DEPLOYMENT.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.SECURITY, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.SECURITY.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.PERSISTENCE, Version=5.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.PERSISTENCE.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.UTILS, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.UTILS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="WIN" />
+    <Import Include="WIN.BASEREUSE" />
+    <Import Include="WIN.SCHEDULING_APPLICATION" />
+    <Import Include="WIN.SCHEDULING_APPLICATION.DOMAIN" />
+    <Import Include="WIN.SCHEDULING_APPLICATION.DOMAIN.Amministrazione" />
+    <Import Include="WIN.SCHEDULING_APPLICATION.DOMAIN.Booking" />
+    <Import Include="WIN.SCHEDULING_APPLICATION.DOMAIN.ComboElements" />
+    <Import Include="WIN.SCHEDULING_APPLICATION.DOMAIN.Licensing" />
+    <Import Include="WIN.SCHEDULING_APPLICATION.PERSISTENCE" />
+    <Import Include="WIN.SECURITY" />
+    <Import Include="WIN.TECHNICAL" />
+    <Import Include="WIN.TECHNICAL.DEPLOYMENT" />
+    <Import Include="WIN.TECHNICAL.PERSISTENCE" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Amministrazionee\AbstraactMovimentoContabile.vb" />
+    <Compile Include="Amministrazionee\MapperCausaleAmministrativa.vb" />
+    <Compile Include="Amministrazionee\MapperContributo.vb" />
+    <Compile Include="Amministrazionee\MapperImpegno.vb" />
+    <Compile Include="Amministrazionee\MapperQuac.vb" />
+    <Compile Include="Amministrazionee\MapperTesseramento.vb" />
+    <Compile Include="Amministrazionee\MapperTesseramentoPagamento.vb" />
+    <Compile Include="Amministrazionee\MapperTesseramentoRimessa.vb" />
+    <Compile Include="Amministrazionee\RiepilogoTesseramentoMapper.vb" />
+    <Compile Include="JournalingDataLoader.vb" />
+    <Compile Include="MapperNameFinder.vb" />
+    <Compile Include="Amministrazionee\MapperTesseramentoIncasso.vb" />
+    <Compile Include="MappingGeo\LaziLoadComuni.vb" />
+    <Compile Include="MappingGeo\LazyLoadProvincie.vb" />
+    <Compile Include="MappingGeo\MapperComune.vb" />
+    <Compile Include="MappingGeo\MapperNazione.vb" />
+    <Compile Include="MappingGeo\MapperProvincia.vb" />
+    <Compile Include="MappingGeo\MapperRegione.vb" />
+    <Compile Include="MappingSecurity\LazyLoadPermissionForProfile.vb" />
+    <Compile Include="MappingSecurity\LazyLoadProfileForRole.vb" />
+    <Compile Include="MappingSecurity\LazyLoadRolesByProfile.vb" />
+    <Compile Include="MappingSecurity\LazyLoadUserForRole.vb" />
+    <Compile Include="MappingSecurity\MapperPermission.vb" />
+    <Compile Include="MappingSecurity\MapperProfile.vb" />
+    <Compile Include="MappingSecurity\MapperRole.vb" />
+    <Compile Include="MappingSecurity\MapperRoleProfile.vb" />
+    <Compile Include="MappingSecurity\MapperUser.vb" />
+    <Compile Include="MappingSystem\MapperSoftwareInfo.vb" />
+    <Compile Include="Mapping\BookingProxy.vb" />
+    <Compile Include="Mapping\LazyLoadAssignments.vb" />
+    <Compile Include="Mapping\LazyLoadAttachments.vb" />
+    <Compile Include="Mapping\LazyLoadCheckin.vb" />
+    <Compile Include="Mapping\MapperAssignment.vb" />
+    <Compile Include="Mapping\MapperAttachmentForDocument.vb" />
+    <Compile Include="Mapping\LazyLoadConctacts.vb" />
+    <Compile Include="Mapping\LazyLoadDocumentBody.vb" />
+    <Compile Include="Mapping\MapperBedType.vb" />
+    <Compile Include="Mapping\MapperBooking.vb" />
+    <Compile Include="Mapping\MapperBookingPayment.vb" />
+    <Compile Include="Mapping\MapperBookingResource.vb" />
+    <Compile Include="Mapping\MapperBookingStatistics.vb" />
+    <Compile Include="Mapping\MapperBookingType.vb" />
+    <Compile Include="Mapping\MapperCheckin.vb" />
+    <Compile Include="Mapping\MapperCustomer.vb" />
+    <Compile Include="Mapping\MapperDocument.vb" />
+    <Compile Include="Mapping\MapperDocumentScope.vb" />
+    <Compile Include="Mapping\MapperDocumentType.vb" />
+    <Compile Include="Mapping\MapperLabel.vb" />
+    <Compile Include="Mapping\MapperLicInfo.vb" />
+    <Compile Include="Mapping\MapperMyAppointment.vb" />
+    <Compile Include="Mapping\MapperMyTask.vb" />
+    <Compile Include="Mapping\MapperOperator.vb" />
+    <Compile Include="Mapping\MapperOutcome.vb" />
+    <Compile Include="Mapping\MapperPaymentStatistics.vb" />
+    <Compile Include="Mapping\MapperPaymentType.vb" />
+    <Compile Include="Mapping\MapperResource.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PersistenceFacade.vb" />
+    <Compile Include="PersistenceMapperRegistry.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="2.5Scripts\App_Install.bak" />
+    <None Include="AccessDB\App_2.0_DB_Install.bak">
+    </None>
+    <None Include="AccessDB\App_dbInstall_2_1.bak">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Db.Config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="DBAccess.Config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ScriptAgenda\10_App_DocScope.sql" />
+    <None Include="ScriptAgenda\11_App_DocType.sql" />
+    <None Include="ScriptAgenda\12_DbUpdate.sql" />
+    <None Include="ScriptAgenda\13_App_Documents.sql" />
+    <None Include="ScriptAgenda\14_App_Destinations.sql" />
+    <None Include="ScriptAgenda\15_InstallationInfo.sql" />
+    <None Include="ScriptAgenda\16_InstallationInfo.sql" />
+    <None Include="ScriptAgenda\17_App_LastProtocols.sql" />
+    <None Include="ScriptAgenda\18_App_Attachments.sql" />
+    <None Include="ScriptAgenda\19_App_Attachments.sql" />
+    <None Include="ScriptAgenda\1_DocTypeTable.sql" />
+    <None Include="ScriptAgenda\20_App_DocScope.sql" />
+    <None Include="ScriptAgenda\21_UpdateDB.sql" />
+    <None Include="ScriptAgenda\2_App_DocScope.sql" />
+    <None Include="ScriptAgenda\3_App_DocScope.sql" />
+    <None Include="ScriptAgenda\4_DocTypeTable.sql" />
+    <None Include="ScriptAgenda\5_App_Documents.sql" />
+    <None Include="ScriptAgenda\6_App_DocType.sql" />
+    <None Include="ScriptAgenda\7_App_Destinations.sql" />
+    <None Include="ScriptAgenda\8_App_Operators.sql" />
+    <None Include="ScriptAgenda\9_App_DocScope.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="2.1Scripts\1_Causaliamministrazione.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="2.1Scripts\2_QuoteTesseramento.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="2.1Scripts\3_IncassiTesseramento.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="2.1Scripts\4_PagamentiTesseramento.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="2.1Scripts\5_Tesseramento.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="2.1Scripts\6_ImpegniTesseramento.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="2.1Scripts\7_Contributi.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="2.1Scripts\8_Quac.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="2.1Scripts\9_Db_Update.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="2.5Scripts\1-BookingResources.sql" />
+    <Content Include="2.5Scripts\10-DBUpdate.sql" />
+    <Content Include="2.5Scripts\2-BookingType.sql" />
+    <Content Include="2.5Scripts\3-BookingCalendarDate.sql" />
+    <Content Include="2.5Scripts\4-BookingPaymentType.sql" />
+    <Content Include="2.5Scripts\5-BookingBedType.sql" />
+    <Content Include="2.5Scripts\6-Booking.sql" />
+    <Content Include="2.5Scripts\7-BookingAssignment.sql" />
+    <Content Include="2.5Scripts\8-BookingPayment.sql" />
+    <Content Include="2.5Scripts\9-BookingCheckin.sql" />
+    <Content Include="2.5Scripts\App_Customers.sql" />
+    <Content Include="2.5Scripts\functions\1-getnumdaysinmonthsimpl.sql" />
+    <Content Include="2.5Scripts\functions\2-getnumdaysinmonth.sql" />
+    <Content Include="2.5Scripts\functions\3-getnnome mese.sql" />
+    <Content Include="2.5Scripts\functions\4-numberofdaysinrange.sql" />
+    <Content Include="2.5Scripts\functions\5-constructdate.sql" />
+    <Content Include="2.5Scripts\functions\tabledfunctions\1-creadatarangeintable.sql" />
+    <Content Include="2.5Scripts\functions\tabledfunctions\2-tempdateble.sql" />
+    <Content Include="2.5Scripts\functions\tabledfunctions\3-calendardatefill.sql" />
+    <Content Include="2.5Scripts\functions\tabledfunctions\4-accontipermese.sql" />
+    <Content Include="2.5Scripts\functions\tabledfunctions\5-saldipermese.sql" />
+    <Content Include="2.5Scripts\functions\tabledfunctions\6-daincassarepermese.sql" />
+    <Content Include="2.5Scripts\functions\tabledfunctions\7-incassipermese.sql" />
+    <Content Include="2.5Scripts\functions\tabledfunctions\8-statistichepagamentipermese.sql" />
+    <Content Include="2.5Scripts\functions\tabledfunctions\9-statistichepagamentipeanno.sql" />
+    <Content Include="2.5Scripts\functions\tabledfunctions\vendite\1-venditepermese.sql" />
+    <Content Include="2.5Scripts\functions\tabledfunctions\vendite\2-venditepeanno.sql" />
+    <Content Include="2.6 Scripts\App_DocScope_Visibility.sql" />
+    <Content Include="2.6 Scripts\Db_Update.sql" />
+    <Content Include="AccessDB\App.mdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WIN.SCHEDULING_APPLICATION.DOMAIN\WIN.SCHEDULING_APPLICATION.DOMAIN.csproj">
+      <Project>{63a3a974-e03b-4792-977a-013e13850a94}</Project>
+      <Name>WIN.SCHEDULING_APPLICATION.DOMAIN</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

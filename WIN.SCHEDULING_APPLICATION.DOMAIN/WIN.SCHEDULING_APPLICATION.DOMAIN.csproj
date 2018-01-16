@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{63A3A974-E03B-4792-977A-013E13850A94}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WIN.SCHEDULING_APPLICATION.DOMAIN</RootNamespace>
+    <AssemblyName>WIN.SCHEDULING_APPLICATION.DOMAIN</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>http://localhost/WIN.SCHEDULING_APPLICATION.DOMAIN/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WIN.TECHNICAL.DEPLOYMENT, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.DEPLOYMENT.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.MIDDLEWARE, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.MIDDLEWARE.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.GUI.UTILITY, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.GUI.UTILITY.dll</HintPath>
+    </Reference>
+    <Reference Include="WIN.TECHNICAL.VB.UTILS, Version=6.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dlls\WIN.TECHNICAL.VB.UTILS.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivityState.cs" />
+    <Compile Include="Amministrazione\AbstractMovimentoContabile.cs" />
+    <Compile Include="Amministrazione\CausaleAmministrativa.cs" />
+    <Compile Include="Amministrazione\ConfrontoRimessaImpegno.cs" />
+    <Compile Include="Amministrazione\Contributo.cs" />
+    <Compile Include="Amministrazione\Impegno.cs" />
+    <Compile Include="Amministrazione\MovimentoContabileFactory.cs" />
+    <Compile Include="Amministrazione\Quac.cs" />
+    <Compile Include="Amministrazione\RiepilogoTesseramento.cs" />
+    <Compile Include="Amministrazione\Tesseramento.cs" />
+    <Compile Include="Amministrazione\TesseramentoIncasso.cs" />
+    <Compile Include="Amministrazione\TesseramentoPagamento.cs" />
+    <Compile Include="Amministrazione\TesseramentoRimessa.cs" />
+    <Compile Include="AppointmentDateValidator.cs" />
+    <Compile Include="AppointmentUtils.cs" />
+    <Compile Include="AppointmentState.cs" />
+    <Compile Include="AttachmentAccess\FileSystemUtilsWithImpersonation.cs" />
+    <Compile Include="AttachmentAccess\INetworkFileSystemUtils.cs" />
+    <Compile Include="AttachmentAccess\NetworkCredentials.cs" />
+    <Compile Include="AttachmentAccess\NetworkFileSystemUtilsProxy.cs" />
+    <Compile Include="AttachmentForDocument.cs" />
+    <Compile Include="Booking\Arrival.cs" />
+    <Compile Include="Booking\ArrivedPerson.cs" />
+    <Compile Include="Booking\Assignment.cs" />
+    <Compile Include="Booking\BedType.cs" />
+    <Compile Include="Booking\Booking.cs" />
+    <Compile Include="Booking\BookingPayment.cs" />
+    <Compile Include="Booking\BookingStatistics.cs" />
+    <Compile Include="Booking\BookingType.cs" />
+    <Compile Include="Booking\Checkin.cs" />
+    <Compile Include="Booking\IBooking.cs" />
+    <Compile Include="Booking\BookingResource.cs" />
+    <Compile Include="Booking\PaymentStatistics.cs" />
+    <Compile Include="Booking\PaymentType.cs" />
+    <Compile Include="ComboElements\DocumentScope.cs" />
+    <Compile Include="ComboElements\DocumentType.cs" />
+    <Compile Include="Document.cs" />
+    <Compile Include="DocumentBody.cs" />
+    <Compile Include="IDocumentBody.cs" />
+    <Compile Include="ILastProtocolNumberRetriever.cs" />
+    <Compile Include="Licensing\LicInfo.cs" />
+    <Compile Include="MyAppointment.cs" />
+    <Compile Include="ComboElements\Label.cs" />
+    <Compile Include="ComboElements\Operator.cs" />
+    <Compile Include="ComboElements\Outcome.cs" />
+    <Compile Include="ComboElements\Resource.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="ComboElements\SimpleComboElement.cs" />
+    <Compile Include="MyTask.cs" />
+    <Compile Include="OutlookDeadLineStateFactory.cs" />
+    <Compile Include="PreviewNotavailableBody.cs" />
+    <Compile Include="PriorityType.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SoftwareInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

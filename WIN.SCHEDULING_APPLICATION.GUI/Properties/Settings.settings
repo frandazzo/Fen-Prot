@@ -1,0 +1,111 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WIN.SCHEDULING_APP.GUI.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Main_AppName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Agenda</Value>
+    </Setting>
+    <Setting Name="Main_AppStyleName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">iMaginary</Value>
+    </Setting>
+    <Setting Name="Main_StartCommand" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Home</Value>
+    </Setting>
+    <Setting Name="Main_MaxResult" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="Main_Province" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Main_Comune" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Main_DeadlineDaysBefore" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="Main_Calendar_ViewType" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Giornaliera</Value>
+    </Setting>
+    <Setting Name="Main_CalendarSubject" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Appuntamento</Value>
+    </Setting>
+    <Setting Name="Main_ProductionEnvironment" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Main_ViewTaskDetails" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Main_TaskSubject" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Attività</Value>
+    </Setting>
+    <Setting Name="Main_MarkActivityCompletedafterDragDrop" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Main_AskIfActivityMustbeMarkedAsCompleted" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Main_RenewActivityAfterDragDrop" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Main_AskIfRenewActivityAfterDragDrop" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Main_DaysOfRenewTask" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="Main_ActivateTaskPanelOnCalendar" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Main_OtherApp" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Main_CalendarGroupType" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Main_FillAppointmentLocationWithCustomerAddress" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Main_StartInitialSearch" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Main_InsertJolly" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Main_DocumentDefaultSubject" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Oggetto documento</Value>
+    </Setting>
+    <Setting Name="Main_PreviewDocument" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Main_LastBack" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">1900-01-01</Value>
+    </Setting>
+    <Setting Name="Main_ProtocolStrategy" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Progressive</Value>
+    </Setting>
+    <Setting Name="Main_PanelCollapsed" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Main_ShowOnlyAgendaFunctions" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Main_Nazione" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Main_ZoomTemporale" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="Main_ZoomSpaziale" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="networkdomain" Type="System.String" Scope="User">
+      <Value Profile="(Default)">169.254.0.20</Value>
+    </Setting>
+    <Setting Name="networkpassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">fenealuil13</Value>
+    </Setting>
+    <Setting Name="networkusername" Type="System.String" Scope="User">
+      <Value Profile="(Default)">protocollo</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
