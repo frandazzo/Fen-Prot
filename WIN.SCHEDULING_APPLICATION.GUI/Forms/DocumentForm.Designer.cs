@@ -285,6 +285,8 @@
             this.layoutControlItem15 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem16 = new DevExpress.XtraLayout.LayoutControlItem();
             this.richEditBarController1 = new DevExpress.XtraRichEdit.UI.RichEditBarController();
+            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
+            this.layoutControlItem17 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageCollection1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemFontEdit1)).BeginInit();
@@ -326,6 +328,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.richEditBarController1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonControl1
@@ -2153,6 +2156,7 @@
             this.layoutControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.layoutControl1.Controls.Add(this.simpleButton4);
             this.layoutControl1.Controls.Add(this.simpleButton3);
             this.layoutControl1.Controls.Add(this.simpleButton1);
             this.layoutControl1.Controls.Add(this.cmdContacts);
@@ -2243,9 +2247,9 @@
             // simpleButton2
             // 
             this.simpleButton2.Image = global::WIN.SCHEDULING_APP.GUI.Properties.Resources.label_16;
-            this.simpleButton2.Location = new System.Drawing.Point(647, 12);
+            this.simpleButton2.Location = new System.Drawing.Point(671, 12);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(145, 22);
+            this.simpleButton2.Size = new System.Drawing.Size(121, 22);
             this.simpleButton2.StyleController = this.layoutControl1;
             this.simpleButton2.TabIndex = 19;
             this.simpleButton2.Text = "Assegna protocollo";
@@ -2254,10 +2258,10 @@
             // txtprot
             // 
             this.txtprot.Enabled = false;
-            this.txtprot.Location = new System.Drawing.Point(454, 12);
+            this.txtprot.Location = new System.Drawing.Point(441, 12);
             this.txtprot.MenuManager = this.ribbonControl1;
             this.txtprot.Name = "txtprot";
-            this.txtprot.Size = new System.Drawing.Size(189, 20);
+            this.txtprot.Size = new System.Drawing.Size(144, 20);
             this.txtprot.StyleController = this.layoutControl1;
             this.txtprot.TabIndex = 18;
             this.txtprot.EditValueChanged += new System.EventHandler(this.txtprot_EditValueChanged);
@@ -2366,7 +2370,7 @@
             this.txtsub.Location = new System.Drawing.Point(91, 12);
             this.txtsub.MenuManager = this.ribbonControl1;
             this.txtsub.Name = "txtsub";
-            this.txtsub.Size = new System.Drawing.Size(280, 20);
+            this.txtsub.Size = new System.Drawing.Size(267, 20);
             this.txtsub.StyleController = this.layoutControl1;
             this.txtsub.TabIndex = 4;
             this.txtsub.EditValueChanged += new System.EventHandler(this.txtsub_EditValueChanged);
@@ -2394,7 +2398,8 @@
             this.layoutControlItem13,
             this.layoutControlItem14,
             this.layoutControlItem15,
-            this.layoutControlItem16});
+            this.layoutControlItem16,
+            this.layoutControlItem17});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Size = new System.Drawing.Size(834, 513);
@@ -2437,7 +2442,7 @@
             this.layoutControlItem1.CustomizationFormText = "Oggetto";
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(363, 26);
+            this.layoutControlItem1.Size = new System.Drawing.Size(350, 26);
             this.layoutControlItem1.Text = "Oggetto";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(76, 13);
             // 
@@ -2559,9 +2564,9 @@
             // 
             this.layoutControlItem13.Control = this.txtprot;
             this.layoutControlItem13.CustomizationFormText = "Protocollo";
-            this.layoutControlItem13.Location = new System.Drawing.Point(363, 0);
+            this.layoutControlItem13.Location = new System.Drawing.Point(350, 0);
             this.layoutControlItem13.Name = "layoutControlItem13";
-            this.layoutControlItem13.Size = new System.Drawing.Size(272, 26);
+            this.layoutControlItem13.Size = new System.Drawing.Size(227, 26);
             this.layoutControlItem13.Text = "Protocollo";
             this.layoutControlItem13.TextSize = new System.Drawing.Size(76, 13);
             // 
@@ -2569,9 +2574,9 @@
             // 
             this.layoutControlItem14.Control = this.simpleButton2;
             this.layoutControlItem14.CustomizationFormText = "layoutControlItem14";
-            this.layoutControlItem14.Location = new System.Drawing.Point(635, 0);
+            this.layoutControlItem14.Location = new System.Drawing.Point(659, 0);
             this.layoutControlItem14.Name = "layoutControlItem14";
-            this.layoutControlItem14.Size = new System.Drawing.Size(149, 26);
+            this.layoutControlItem14.Size = new System.Drawing.Size(125, 26);
             this.layoutControlItem14.Text = "layoutControlItem14";
             this.layoutControlItem14.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem14.TextToControlDistance = 0;
@@ -2778,6 +2783,28 @@
             this.richEditBarController1.BarItems.Add(this.insertTableOfEquationsItems1);
             this.richEditBarController1.Control = this.rchbody;
             // 
+            // simpleButton4
+            // 
+            this.simpleButton4.Location = new System.Drawing.Point(589, 12);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.Size = new System.Drawing.Size(78, 22);
+            this.simpleButton4.StyleController = this.layoutControl1;
+            this.simpleButton4.TabIndex = 22;
+            this.simpleButton4.Text = "Copia prot.";
+            this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
+            // 
+            // layoutControlItem17
+            // 
+            this.layoutControlItem17.Control = this.simpleButton4;
+            this.layoutControlItem17.CustomizationFormText = "layoutControlItem17";
+            this.layoutControlItem17.Location = new System.Drawing.Point(577, 0);
+            this.layoutControlItem17.Name = "layoutControlItem17";
+            this.layoutControlItem17.Size = new System.Drawing.Size(82, 26);
+            this.layoutControlItem17.Text = "layoutControlItem17";
+            this.layoutControlItem17.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem17.TextToControlDistance = 0;
+            this.layoutControlItem17.TextVisible = false;
+            // 
             // DocumentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2830,6 +2857,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.richEditBarController1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem17)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3091,5 +3119,7 @@
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem16;
         private System.Windows.Forms.ImageList imageList1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton4;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem17;
     }
 }

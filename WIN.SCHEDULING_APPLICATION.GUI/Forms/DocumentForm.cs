@@ -968,6 +968,11 @@ namespace WIN.SCHEDULING_APP.GUI.Forms
 
         }
 
+        private void simpleButton4_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Clipboard.SetText(txtprot.Text);
+        }
+
    
 
     }
