@@ -650,8 +650,23 @@ namespace WIN.SCHEDULING_APP.GUI.Forms
         {
             if (_current == null)
             {
-                XtraMessageBox.Show("Salvare il documento prima di asegnargli un protocollo", "Messaggio", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
+
+                if (IsProtocolCalculable())
+                {
+                    txtprot.Text = CalculateProtocollo();
+                    return;
+                }
+                else
+                {
+                    XtraMessageBox.Show("Attenzione per il calcolo del protocollo è necessario inserire una causale , un operatore e una cartellina!", "Messaggio", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+
+               
+
+               
+                //
+                
             }
 
 
@@ -681,6 +696,72 @@ namespace WIN.SCHEDULING_APP.GUI.Forms
             }
             
 
+        }
+
+        private bool IsProtocolCalculable()
+        {
+            DocumentType _type = cbocau.SelectedItem as DocumentType;
+            DocumentScope _scope = cbocar.SelectedItem as DocumentScope;
+            Operator _operator = cboop.SelectedItem as Operator;
+
+            if (_type == null)
+                return false;
+
+            if (_scope == null)    
+                return false;
+
+            if (_operator == null)
+                return false;
+
+            return true;
+            
+        }
+
+        private string CalculateProtocollo()
+        {
+            ILastProtocolNumberRetriever protocolRetriever = ProtocolRetrieverFactory.GetProtocolRetriever(DataAccessServices.Instance().PersistenceFacade, Properties.Settings.Default.Main_ProtocolStrategy);
+
+
+            //_current.Responsable = txtresp.Text;
+            //_current.Date = dtpdata.DateTime;
+
+            //_current.Contacts = new ArrayList();
+            //foreach (Customer item in lstcont.Items)
+            //{
+            //    _current.Contacts.Add(item);
+            //}
+
+            //_current.Priority = (PriorityType)Enum.Parse(typeof(PriorityType), cbopri.Text);
+            //_current.Nature = (WIN.SCHEDULING_APPLICATION.DOMAIN.Document.DocumentNature)Enum.Parse(typeof(WIN.SCHEDULING_APPLICATION.DOMAIN.Document.DocumentNature), cbotip.Text);
+
+            //_current.Operator = cboop.SelectedItem as Operator;
+            //_current.Type = cbocau.SelectedItem as DocumentType;
+            //_current.Scope = cbocar.SelectedItem as DocumentScope;
+
+            DocumentType _type = cbocau.SelectedItem as DocumentType;
+            DocumentScope _scope = cbocar.SelectedItem as DocumentScope;
+            Operator _operator = cboop.SelectedItem as Operator;
+            DateTime _date = dtpdata.DateTime;
+            string _protocol = "";
+            if (_type != null)
+            {
+                if (!string.IsNullOrEmpty(_type.ProtocolCode))
+                    _protocol = _type.ProtocolCode;
+            }
+
+
+            _protocol = _protocol + protocolRetriever.GetLastProtocolNumber(_date.Year).ToString() + "/";
+
+            if (_scope != null)
+            {
+                _protocol += _scope.ProtocolCode + "/";
+                _protocol += _scope.ResponsableProtocolCode;
+            }
+            if (_operator != null)
+                _protocol += "/" + _operator.ProtocolCode;
+
+
+            return _protocol;
         }
 
         private void simpleButton1_Click(object sender, EventArgs e)
